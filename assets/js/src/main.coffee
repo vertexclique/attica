@@ -34,5 +34,5 @@ $ ->
   if Uno.isAbout
     $('#rsabox').bind 'input propertychange', ->
       if $(this).val() == '52 09 6a d5 30'
-        window.open 'mailto:mahmutbulut0@gmail.com?subject=Expected Candidate&body=Below are my details and meeting location:'
+        window.open 'mailto:vertexclique@gmail.com?subject=Expected Candidate&body=Below are my details and meeting location:'
       return
