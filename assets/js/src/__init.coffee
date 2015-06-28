@@ -18,6 +18,12 @@ $ ->
 
     is: (property, value) -> document.body.dataset[property] is value
 
+    isAbout: ->
+      if window.location.pathname.replace(/\//gi, '') == 'about'
+        true
+      else
+        false
+
     readTime: ->
       DateInDays = (selector, cb) ->
         $(selector).each ->

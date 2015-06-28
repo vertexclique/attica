@@ -28,5 +28,11 @@ $ ->
   if Uno.is 'page', 'error'
     $('#panic-button').click ->
       s = document.createElement 'script'
-      s.setAttribute 'src','https://nthitz.github.io/turndownforwhatjs/tdfw.js'
+      s.setAttribute 'src','http://nthitz.github.io/turndownforwhatjs/tdfw.js'
       document.body.appendChild s
+
+  if Uno.isAbout
+    $('#rsabox').bind 'input propertychange', ->
+      if $(this).val() == '52 09 6a d5 30'
+        window.open 'mailto:mahmutbulut0@gmail.com?subject=Expected Candidate&body=Below are my details and meeting location:'
+      return

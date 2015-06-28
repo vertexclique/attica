@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{#post}}
+
+  <article class="{{post_class}}">
+    <header>
+      <a id="share_twitter" alt="Tweet '{{title}}'" target="_blank">
+        {{#if image}}<img id="post-image" src={{image}} alt="{{{title}}}">{{/if}}
+        <h1 class="icon-reverse icon-social-twitter-post" id="post-title">Headlines.</h1>
+      </a>
+    </header>
+
+    <section class="{{post_class}}">
+      {{content}}
+    </section>
+
+  </article>
+
+{{/post}}
